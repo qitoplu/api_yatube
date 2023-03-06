@@ -1,5 +1,4 @@
 """Django settings for yatube project."""
-from datetime import timedelta
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -122,9 +121,4 @@ REST_FRAMEWORK = {
     [
         'rest_framework.authentication.TokenAuthentication',
     ]
-}
-
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
-    'AUTH_HEADER_TYPES': ('Bearer',),
 }
