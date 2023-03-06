@@ -1,5 +1,5 @@
+from api.views import CommentViewSet, GroupViewSet, PostViewSet
 from django.urls import include, path
-from api.views import PostViewSet, GroupViewSet, CommentViewSet
 from rest_framework import routers
 from rest_framework.authtoken import views
 
